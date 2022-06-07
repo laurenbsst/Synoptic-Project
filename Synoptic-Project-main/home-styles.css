@@ -1,0 +1,329 @@
+/* Master Styles */
+body
+{
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Navigation Styles */
+.page-name
+{
+    position: relative;
+    bottom: 60px;
+    margin-bottom: -150px;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.navigation
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side
+{
+    display: flex;
+}
+
+.navigation > .left-side > div
+{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.navigation-link
+{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.navigation-link a
+{
+    color: rgb(50, 105, 175);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navigation-link:hover
+{
+    border-bottom: 1px solid black;
+}
+
+.navigation-link a:hover
+{
+    color: black;
+}
+
+.active-navigation-link
+{
+    border-bottom: 1px solid black;
+}
+
+.active-navigation-link a
+{
+    color: black !important;
+}
+
+.dropbtn 
+{
+    background-color: #FFFFFF;
+    color: rgb(50, 105, 175);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.dropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.kart-club-logo img
+{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    top: -25px;
+}
+
+.kart-club-logo
+{
+    width: 100%;
+    height: 25px;
+}
+
+/* Item Styles */
+
+.items-collection
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item
+{
+    position: relative;
+}
+
+.item-background
+{
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item-foreground
+{
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+
+}
+
+.logo img
+{
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.logo h1
+{
+    color: #FFFFFF;
+    position: relative;
+    top: -350px;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.logo-luke h1
+{
+    color: #FFFFFF;
+    position: relative;
+    top: -335px;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.MSUK-logo img
+{
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.UEA-logo img
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.UEA-small-foreground
+{
+    padding-left: 100px;
+}
+
+.Club-100-logo img
+{
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.subtitle-padding
+{
+    padding-left: 50px;
+    padding-bottom: 25px;
+}
+
+.item-subtitle
+{
+    position: relative;
+    font-size: large;
+}
+
+.item-foreground .item-subtitle
+{
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.item-foreground:hover .item-subtitle
+{
+    font-weight: 600;
+    color: #30A4C5;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.img-darken
+{
+    transition: 1s;
+    filter: brightness(25%);
+}
+
+/* Content Styles */
+.centre-text
+{
+    text-align: center;
+}
+
+.vice-champions
+{
+    padding-left: 38px;
+    color: silver;
+    text-shadow: 1px 1px black;
+}
+
+.vice-champions-with-trophy
+{
+    display: flex;
+    align-items: center;
+    margin-top: -1.5em;
+}
+
+.silver-trophy img
+{
+    padding-left: 1em;
+    height: 40%;
+    width: 40%;
+}
+
+/* Results Page */
+
+.items-collection-results 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.result-overlay
+{
+    text-align: center;
+}
+
+.result-overlay img
+{
+    height: 756px;
+    width: 1344px;
+}
+
+/* Drivers Page */
+
+.items-collection-drivers
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* About Page */
+
+.two-columns
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image img
+{
+    height: 25%;
+}
+
+.profile-content
+{
+    padding: 30px;
+}
+
+.profile-content h1
+{
+    color: #30A4C5;
+}
+
+/* Footer Styles */
+.watermark
+{
+    text-align: center;
+}

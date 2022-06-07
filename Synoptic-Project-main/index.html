@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>CapeYorkConnected</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href = "home-styles.css">
+        <link rel="icon" 
+        type="image/png" 
+        href="assets/UEA Icon.png">
+        <script src="showDropdownContents.js"></script>
+        <script src="darkenImageOnMouseover.js" defer></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navigation">        
+                <div class="left-side">
+                    
+                    <div class="navigation-link active-navigation-link">
+                        <a href="index.html">Home</a>
+                    </div>
+
+                    <div class="dropdown navigation-link">
+                        <button onclick="showDropdownContents()" class="dropbtn">About▾</button>
+                        <div id="aboutDropdown" class="dropdown-content">
+                            <a href="#">Item 1</a>
+                            <a href="drivers.html">Item 2</a>
+                            <a href="about.html">Item 3</a>
+                        </div>                           
+                    </div>
+                    
+                    <div class="navigation-link">
+                        <a href="sign-up.html">Sign-Up</a>
+                    </div>
+                </div>
+
+                <div class="page-name">
+                    <h1>CapeYorkConnected</h1>
+                </div>                 
+            
+                <div class="right-side">
+                    <div class="brand">
+                        <div class = kart-club-logo> <img src="assets/UEA Icon.png" alt="UEA Kart Club"> </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="items-collection">
+                    <a href = "#">
+                    <div class="item">
+                        <div class="item-background" style="background-image:url('./assets/young-woman-old-man.jpg')"></div>
+
+                        <div class="item-foreground">
+                            <div class="logo">
+                                <img src="BUKC Photos/Logos/bukc_white_on_transparent-with-Shadow-1024x341.png" alt="">
+                            </div>
+
+                            <div class="item-subtitle">
+                                Foreground Text
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+
+                    <div class="item">
+                        <div class="item-background" style="background-image:url('./assets/man-laptop.jpg')"></div>
+
+                        <div class="item-foreground">
+                            <div class="Club-100-logo">
+                                <img src="BUKC Photos\Logos\Club100_logo_evo.png" alt="">
+                            </div>
+
+                            <div class="item-subtitle">
+                                <div class="subtitle-padding">
+                                    Foreground Text
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-background" style="background-image:url('./assets/young-man.jpg')"></div>
+
+                        <div class="item-foreground">
+                            <div class="MSUK-logo">
+                                <img src="BUKC Photos\Logos\MS_UK_logo_trans.png" alt="">
+                            </div>
+
+                            <div class="item-subtitle">
+                                Foreground Text
+                            </div>
+                        </div>
+                    </div>
+                </div>                                 
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <div class="container">
+            <div class = "watermark">
+                <a href = "mailto:Sam.Sanders@uea.ac.uk">Sam Sanders</a>
+            </div>
+        </div>
+    </footer>
+</html>
