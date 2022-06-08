@@ -1,0 +1,119 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EEEEEE;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Jost', sans-serif;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 4rem;
+    background-color: #1c658c;
+}
+nav i {
+    margin-left: 1.5rem;
+    font-size: 1.4rem;
+}
+
+button {
+    margin-right: 5rem;
+}
+
+nav>a {
+    margin-right: 1rem;
+}
+nav>a:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 25%;
+}
+
+.column>h2 {
+    font-family: 'Jost', sans-serif;
+}
+
+.myProfile {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    align-items: center;
+    height: 20rem;
+    width: 15rem;
+    border-radius: 2%;
+    box-shadow: 4px 4px 4px lightgray;
+    background-color: white;
+}
+
+.myProfile:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.myProfile>h3 {
+    font-family: 'Jost', sans-serif;
+}
+
+.profilePic {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+}
+
+.personalInfo {
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+}
+p>i {
+    color: #1c658c;
+    padding-right: 0.5rem;
+
+}
+
+.personalInfo>p {
+    margin: 0.5rem;
+}
+
+.image-grid {
+    --gap: 16px;
+    --num-cols: 3;
+    --row-height: 200px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.image {
+    object-fit: cover;
+    height: 13rem;
+    width: 18rem;
+}
+.image:hover{
+    opacity: 30;
+}

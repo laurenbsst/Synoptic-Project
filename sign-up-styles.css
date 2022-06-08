@@ -170,8 +170,8 @@ select {
     .contentContainer {
         display: flex;
         justify-content: space-evenly;
-        height: 70vh;
-        width: 90%;
+        height: 60vh;
+        width: 85%;
         background-color: #EEEEEE;
     }
 
