@@ -19,7 +19,7 @@
 
     <div class="navContainer">
         <nav>
-            <a href="home.html">***logo here***</a>
+            <a href="home.html"><img class="logo" src="./assets/CYC Logo.png"></a>
             <a href="home.html"><i class="fa-solid fa-house"></i></a>
             <a href="explore-page.html"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="messages.html"><i class="fa-solid fa-message"></i></a>
@@ -67,10 +67,12 @@
         <div class="column2">
             <div class="columnHeader">
                 <h2>Good morning, user's name!</h2>
-                <a href="explore-page.html"><i class="fa-solid fa-square-plus"></i></a>
-                <a href="explore-page.html"><i class="fa-solid fa-location-dot"></i></a>
             </div>
             <div class="feed">
+                <div class="newPost">
+                    <input type="text" placeholder="Update your status...">
+
+                </div>
                 <div class="feedCard">
                     <div class="feedHeader">
                         <img class="userPic" src="./assets/brett-jordan-PFMz8RkPn8E-unsplash.jpg">
@@ -80,8 +82,8 @@
                         I will need it to move the dug out earth. Thanks in advance!</p>
                     <div class="feedMid">
                         <div class="socialBtn">
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            <p class="feedContent">31</p>
+                            <i onclick = "count()"class="fa-solid fa-thumbs-up"></i>
+                            <input id="likeCount" type="number" value="15">
                         </div>
                         <div class="socialBtn">
                             <p class="feedContent">3 comments</p>
@@ -143,9 +145,7 @@
                         <p>Isabella Skeats</p>
                     </div>
                     <p class="feedContent">Just a reminder to everyone that the bake sale at Cairns West State School
-                        will be happening at 10am tomorrow! Please come along to buy some sweet treats and support
-                        Cancer Voices Australia! For those that cannot make it, you can still donate online! I will post
-                        this later along with photos from the event :)</p>
+                        will be happening at 10am tomorrow!</p>
                     <div class="feedMid">
                         <div class="socialBtn">
                             <i class="fa-solid fa-thumbs-up"></i>
@@ -181,7 +181,7 @@
                     <div class="feedMid">
                         <div class="socialBtn">
                             <i class="fa-solid fa-thumbs-up"></i>
-                            <p class="feedContent">21</p>
+                            <p class="feedContent">14</p>
                         </div>
                         <div class="socialBtn">
                             <p class="feedContent">7 comments</p>
@@ -204,6 +204,29 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="column">
+            <div class="myProfile">
+                <h3>Suggested accounts</h3>
+                <div class="personalInfo">
+                    <p>Samantha Jones</p>
+                    <p>Jonathan Grano</p>
+                    <p>Amber Fielder</p>
+                    <p>Oscar Lutwyche</p>
+                    <p>Owen Tomkinson</p>
+                </div>
+            </div>
+            <div class="myProfile">
+                <h3>Suggested accounts</h3>
+                <div class="personalInfo">
+                    <p>Samantha Jones</p>
+                    <p>Jonathan Grano</p>
+                    <p>Amber Fielder</p>
+                    <p>Oscar Lutwyche</p>
+                    <p>Owen Tomkinson</p>
+                </div>
+            </div>
+ 
         </div>
     </div>
 
