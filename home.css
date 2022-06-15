@@ -1,7 +1,7 @@
 /* Master Styles */
 body
 {
-    font-family: "Lato", sans-serif;
+    font-family: "Jost", sans-serif;
     margin: 0px;
 }
 
@@ -86,12 +86,12 @@ body
 
 .active-navigation-link
 {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid lightblue;
 }
 
 .active-navigation-link a
 {
-    color: black !important;
+    color: lightblue!important;
 }
 
 .company-logo img
@@ -147,10 +147,11 @@ body
 
 .launch
 {
+    padding-top: 1em;
     display: grid;
     justify-content: center;
     align-content: center;
-    gap: 2em;
+    gap: 5em;
     grid-auto-flow: column;
 }
 
@@ -177,35 +178,66 @@ body
 
 .nav-box
 {
-    margin: auto;
-    width: 380px;
+    margin-left: 1.25em;
+    margin-top: 24px;
+    width: 340px;
     height: 48px;
-    border: 2px solid rgba(211, 27, 27, 0.692);
-    background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.247), rgba(255, 0, 0, 0.747));
+    border: 2px solid rgba(128, 128, 128, 0.253);
+    background-image: linear-gradient(to bottom right, lightblue, white);
 }
 
 .btn-text
 {
     height: 48px;
     top: -24px;
-    color: white;
+    color: #1c658c;
     text-align: center;
 }
 
 .card-body
 {
-    
     margin: 10px;
-    width: 384px;
+    width: 350px;
     height: 256px;
     border: 2px solid rgba(119, 136, 153, 0.247);
-    background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.25), rgba(255, 255, 255, 0.25));
+    background-image: linear-gradient(to bottom right, lightblue, rgba(255, 255, 255, 0.25));
 }
 
 .card
 {
-    display: flex;
-    flex-basis: 100px;
-    width: 384px;
+    width: 350px;
     margin-bottom: 0.05em;
+}
+
+.reviews
+{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 2500px) 
+{
+    .queensland-house img 
+    {
+        height: 384px;
+        width: 2560px;
+        object-fit: cover;
+        filter: brightness(65%);
+    }
+
+    .item-foreground 
+    {
+        position: absolute;
+        top: -400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+    }
 }
