@@ -32,9 +32,10 @@ app.use(passport.initialize()) //initialize passport
 app.use(passport.session()) //alters req object and changes user value into a deserialized user object
 app.use(methodOverride('_method'))
 
+
 app.get('/', checkAuth, (req, res) => {
-    res.render('home.html') //render index page
-  })
+  res.render('home.html') //render index page
+})
 
 app.get('/login', checkNotAuth, (req, res) => {
   res.render('log-in.html') //render index page
@@ -119,4 +120,5 @@ function checkNotAuth(req, res, next) {
   next()
 }
 
-app.listen(3000)
+module.exports = app;
+
