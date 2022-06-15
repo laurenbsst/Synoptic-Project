@@ -1,0 +1,212 @@
+/* Master Styles */
+body
+{
+    font-family: "Lato", sans-serif;
+    height: auto;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: whitesmoke;
+    
+}
+
+.content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation Styles */
+.page-name
+{
+    position: relative;
+    bottom: 60px;
+    margin-bottom: -110px;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    padding-left: 6em;
+    color: white
+}
+
+.navigation
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    height: 6rem;
+    background-color: #1c658c;
+}
+
+.brand
+{
+    padding-top: 2em;
+}
+
+.left-side
+{
+    display: flex;
+}
+
+.navigation > .left-side > div
+{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.navigation-link
+{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.navigation-link a
+{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navigation-link:hover
+{
+    border-bottom: 1px solid lightblue;
+}
+
+.navigation-link a:hover
+{
+    color: lightblue;
+}
+
+.active-navigation-link
+{
+    border-bottom: 1px solid black;
+}
+
+.active-navigation-link a
+{
+    color: black !important;
+}
+
+.company-logo img
+{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    top: -45px;
+}
+
+.company-logo
+{
+    width: 100%;
+    height: 25px;
+}
+
+/* Content Styles */
+
+.queensland-house img
+{
+    height: 384px;
+    width: 1920px;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+.item-foreground
+{
+    position: absolute;
+    top: -175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.item-foreground > h2
+{
+    color: white;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.item-subtitle
+{
+    position: relative;
+    top: 0.5em;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px #000000;
+    color: white;
+}
+
+.launch
+{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 2em;
+    grid-auto-flow: column;
+}
+
+.box
+{
+    width: 384px;
+    height: 384px;
+    border: 2px solid rgba(119, 136, 153, 0.247);
+    background-color: whitesmoke;
+}
+
+.assorted-tools
+{
+    height: 192px;
+    width: 384px;
+    object-fit: cover;
+}
+
+.img-title
+{
+    padding-left: 1em;
+    color: #1c658c;
+}
+
+.nav-box
+{
+    margin: auto;
+    width: 380px;
+    height: 48px;
+    border: 2px solid rgba(211, 27, 27, 0.692);
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.247), rgba(255, 0, 0, 0.747));
+}
+
+.btn-text
+{
+    height: 48px;
+    top: -24px;
+    color: white;
+    text-align: center;
+}
+
+.card-body
+{
+    
+    margin: 10px;
+    width: 384px;
+    height: 256px;
+    border: 2px solid rgba(119, 136, 153, 0.247);
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.25), rgba(255, 255, 255, 0.25));
+}
+
+.card
+{
+    display: flex;
+    flex-basis: 100px;
+    width: 384px;
+    margin-bottom: 0.05em;
+}

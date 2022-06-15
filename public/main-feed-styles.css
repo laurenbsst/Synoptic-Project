@@ -1,0 +1,387 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EEEEEE;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Jost', sans-serif;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+}
+
+.profileNav {
+    position: absolute;
+    left: 73rem;
+    top: -0.75rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 4rem;
+    background-color: #1c658c;
+}
+
+nav i {
+    margin-left: 1.5rem;
+    font-size: 1.4rem;
+}
+
+button {
+    margin-right: 5rem;
+}
+
+nav>a {
+    margin-right: 1rem;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    width: 25%;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center;
+    width: 75%;
+}
+
+.columnHeader h2 {
+    font-family: 'Jost', sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    align-items: center;
+    height: 20rem;
+    width: 15rem;
+    border-radius: 2%;
+    box-shadow: 4px 4px 4px lightgray;
+    background-color: white;
+}
+
+.card>h3 {
+    font-family: 'Jost', sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin-top: 0.2rem;
+}
+
+ul li {
+    float: left;
+    margin: 0.1rem 0.1rem;
+    font-family: 'Nunito', sans-serif;
+    background-color: #1c658c;
+}
+
+.myProfile {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    align-items: center;
+    height: 20rem;
+    width: 15rem;
+    border-radius: 2%;
+    box-shadow: 4px 4px 4px lightgray;
+    background-color: white;
+}
+
+.myProfile:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.myProfile>h3 {
+    font-family: 'Jost', sans-serif;
+}
+
+.profilePic {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+}
+
+.personalInfo {
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p>i {
+    color: #1c658c;
+    padding-right: 0.5rem;
+
+}
+
+.personalInfo>p {
+    margin: 0.5rem;
+}
+
+.feedCard {
+    width: 50rem;
+    height: 17rem;
+    border-radius: 2%;
+    margin-top: 1rem;
+    box-shadow: 4px 4px 4px lightgray;
+    background-color: white;
+}
+
+.feedImgCard {
+    width: 50rem;
+    height: 48rem;
+    border-radius: 2%;
+    margin-top: 1rem;
+    box-shadow: 4px 4px 4px lightgray;
+    background-color: white;
+}
+
+.feedImg {
+    width: 50rem;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.feedContent {
+    font-family: 'Nunito', sans-serif;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.feed i {
+    padding-left: 0.5rem;
+}
+
+.feedHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+}
+
+.userPic {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.feedMid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socialBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.socialBtn i {
+    padding-right: 0.5rem;
+    color: #1c658c;
+}
+
+.feedFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Nunito', sans-serif;
+}
+.socialBtn input {
+    border: none;
+    outline: none;
+    pointer-events: none;
+}
+#likeCount {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+}
+@media screen and (min-width: 1920px) {
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .navContainer {
+        height: 5rem;
+    }
+    nav i {
+        margin-left: 3rem;
+        font-size: 2rem;
+    }
+
+    .logo {
+        width: 5rem;
+        height: 2rem;
+        margin-left: 3rem;
+    }
+
+    .profileNav {
+        position: absolute;
+        left: 113rem;
+        top: -1rem;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 100%;
+    }
+    .column {
+        width: 25%;
+        align-items: center;
+    }
+    .column2 {
+        width: 60%;
+    }
+
+    .columnHeader {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .columnHeader i {
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-left: 1.5rem;
+        color: #1c658c;
+    }
+
+    .columnHeader h2 {
+        font-size: 2rem;
+    }
+    .myProfile {
+        height: 26rem;
+        width: 20rem;
+        margin-right: 3rem;
+        align-items: center;
+    }
+
+    .myProfile>h3 {
+        font-size: 1.5rem;
+    }
+
+    .profilePic {
+        margin-top: 1rem;
+        height: 7rem;
+        width: 7rem;
+    }
+
+    .personalInfo {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .personalInfo i {
+        padding-right: 1rem;
+    }
+    .card {
+        margin-right: 3rem;
+        margin-top: 3rem;
+        width: 20rem;
+        height: 15rem;
+    }
+
+    .card>h3 {
+        font-size: 1.5rem;
+    }
+
+    .card li {
+        font-size: 1.5rem;
+    }
+    .feedCard {
+        width: 50rem;
+        height: 22rem;
+        border-radius: 2%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 4px 4px 4px lightgray;
+        background-color: white;
+    }
+    
+    .feedImgCard {
+        width: 50rem;
+        height: 56rem;
+        border-radius: 2%;
+        margin-top: 1rem;
+        box-shadow: 4px 4px 4px lightgray;
+        background-color: white;
+    }
+    .feedContent {
+        font-family: 'Nunito', sans-serif;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        font-size: 1.5rem;
+    }
+    
+    .feed i {
+        padding-left: 0.5rem;
+    }
+    
+    .feedHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 1.5rem;
+        font-family: 'Jost', sans-serif;
+    }
+    
+    .userPic {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 100%;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .socialBtn i {
+        font-size: 1.5rem;
+    }
+    .socialBtn i:hover {
+        color: #9AD0EC;
+        cursor: auto;
+    }
+    .newPost {
+        width: 50rem;
+        height: 5rem;
+        border-radius: 2%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 4px 4px 4px lightgray;
+        background-color: white;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="sign-up-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript"></script>
+    <script src="script.js" defer></script>
+    <title>Study Planner - Log in</title>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="contentContainer">
+            <div class="signUpContainer">
+                <h2 class="signUpTitle">Log In</h2>
+                <form action="/login" method="POST">
+                    <% if (messages.error) { %>
+                        <%= messages.error %> <!--display error message-->
+                    <% } %><br><br>
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" placeholder="joebloggs123@gmail.com" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter 7 characters or more" required>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="footer">
+                    <p class="footerText">Don't have a CapeYorkConnected account?</p>
+                    <p class="signInText"><a href="/register">Sign up</a></p>
+                </div>
+            </div>
+            <div class="testimonialsContainer">
+                <div class="slideshowContainer">
+                    <div class="mySlides fade">
+                        <p>"CapeYorkConnected keeps me in touch with the rest of my community."
+                        </p>
+                        <img class="person-image" src="./assets/young-man.jpg">
+                        <p>- Alex, 25</p>
+                    </div>
+                    <div class="mySlides fade">
+                        <p>"It's made communicating with friends and family so much easier!"</p>
+                        <img class="person-image" src="./assets/young-woman-old-man.jpg">
+                        <p> - Keira, 31</p>
+                    </div>
+                    <div class="mySlides fade">
+                        <p>"With CapeYorkConnected I can easily find tradesmen and businesses in my area."</p>
+                        <img class="person-image" src="./assets/man-laptop.jpg">
+                        <p> - Lucas, 45</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
