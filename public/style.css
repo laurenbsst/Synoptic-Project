@@ -1,0 +1,290 @@
+/*Global Styles (Available on both web and app)*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+
+#logo {
+    cursor: pointer;
+    width: 7vw;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+/*Web only styles*/
+@media (min-width: 769px) {
+
+    /*display none ensures that all html elements with an id of app do not show up on larger devices*/
+    #app {
+        display: none;
+    }
+
+    .web-container {
+        width: 72%;
+        margin: auto;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 5px 0 0 0;
+    }
+
+    #search-bar {
+        width: 16vw;
+        height: 30px;
+        padding: 5px;
+        border: 1px solid rgb(216, 216, 216);
+        border-radius: 4px;
+        background-color: rgba(235, 235, 235, 0.664);
+        color: rgba(0, 0, 0, 0.562);
+        -webkit-appearance: none;
+        outline: none;
+        text-align: center;
+    }
+
+    #search-bar::placeholder {
+        font-size: 1em;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.452);
+    }
+
+    /*Buttons*/
+    .web-buttons {
+        padding: 8px 0;
+    }
+
+    .web-button {
+        cursor: pointer;
+        font-weight: 700;
+        width: 60px;
+        height: 30px;
+        -webkit-appearance: none;
+        outline: none;
+        border: none;
+        border-radius: 4px;
+    }
+
+    #login-button {
+        background-color: rgb(1, 151, 238);
+        color: #f8f8f8;
+        font-size: 13px;
+    }
+
+    #signup-button {
+        background-color: #ffffff;
+        color: rgb(1, 151, 238);
+    }
+
+    .section-break {
+        border-top: 1px solid rgb(216, 216, 216);
+    }
+
+    /*Main Section*/
+    .background {
+        background-color: rgba(235, 235, 235, 0.315);
+    }
+
+    .feed-heading {
+        padding: 20px 0 20px 0;
+        font-size: 0.9em;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.562);
+    }
+
+    /*Web only shows images and they are in three columns as styled below*/
+    .pics-only {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .image {
+        width: 22vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+/*App Only Styles*/
+@media (min-width: 290px) and (max-width: 768px) {
+
+    /*Web only styles are disabled*/
+    #web {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+    }
+
+    /*Styling for top search area*/
+    .header-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5em 0 0.2em 0;
+        width: 98vw;
+    }
+
+    .header-left {
+        display: flex;
+        align-items: center;
+        background-color: rgba(235, 235, 235, 0.747);
+        border: 1px solid rgba(0, 0, 0, 0.418);
+        height: 4vh;
+        border-radius: 10px;
+        padding: 5px;
+        margin-left: 3px;
+    }
+
+    .header-right {
+        padding: 6px;
+    }
+
+    .header-right .fa-home {
+        font-size: 20px;
+    }
+
+    #search-bar {
+        outline: none;
+        border: none;
+        background-color: rgba(235, 235, 235, 0.747);
+        border-radius: 10px;
+        width: 80vw;
+        padding: 3px;
+    }
+
+    /*Styling below is for the sticky navigation*/
+    .header-bottom {
+        z-index: 2;
+        position: sticky;
+        top: 0px;
+        height: 38px;
+        width: 100%;
+        padding: 0.4em;
+        background-color: white;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .nav-button {
+        width: 80px;
+        height: 25px;
+        padding: 5px;
+        background-color: rgba(235, 235, 235, 0.747);
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fa-shopping-bag {
+        font-size: 10px;
+        margin-right: 4px;
+        margin-bottom: 2px;
+    }
+
+    /*Main Section*/
+    main {
+        position: relative;
+        padding-bottom: 2em;
+    }
+
+    .reels {
+        overflow: hidden;
+        height: 50vh;
+        margin: 3px;
+    }
+
+    .reels video {
+        height: 50vh;
+    }
+
+    .pics-only {
+        margin: 3px;
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .image {
+        width: 32vw;
+    }
+
+    .pv-container {
+        margin: 3px;
+        display: grid;
+        grid-gap: 3px;
+        grid-template-areas:
+            'top-pv-image pv-video pv-video'
+            'bottom-pv-image pv-video pv-video';
+    }
+
+    .pv-video {
+        grid-area: pv-video;
+    }
+
+    .video {
+        height: 30vh;
+        width: 64vw;
+    }
+
+    .top-pv-image {
+        grid-area: top-pv-image;
+        width: 32vw;
+    }
+
+    .bottom-pv-image {
+        grid-area: bottom-pv-image;
+        width: 32vw;
+    }
+
+    /*Footer*/
+    footer {
+
+        /*The code below is for a fixed footer*/
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+        /*Fixed footer*/
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .fa-home {
+        font-size: 22px;
+    }
+
+    .footer-search {
+        font-size: 20px;
+    }
+
+    .fa-plus-square {
+        font-size: 22px;
+    }
+
+    .fa-heart {
+        font-size: 22px;
+    }
+
+    .user {
+        width: 22px;
+        border-radius: 50%;
+    }
+}
