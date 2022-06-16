@@ -16,6 +16,22 @@ nav {
     width: 100%;
 }
 
+.button {
+    background-color: lightblue;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: fixed;
+    bottom: 560px;
+    right: 0px; 
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
 .profileNav {
     position: absolute;
     left: 73rem;
